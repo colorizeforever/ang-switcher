@@ -1,0 +1,19 @@
+
+  <div
+    class="toggle-button-cover"
+    [ngClass]="disabled ? 'disabled' : '' "
+    [ngStyle]="bgColor"
+    (click)="changeCheck()"
+  >
+    <input
+      [disabled]="disabled"
+      id="switcher"
+      type="checkbox"
+      class="toggle-button">
+    <label
+      [ngStyle]="sliderColor"
+      [ngClass]="checked ? 'checked' : 'not__checked'"
+      for="switcher" class="checkmark"
+    ></label>
+</div>
+

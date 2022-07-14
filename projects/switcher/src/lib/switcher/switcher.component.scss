@@ -1,0 +1,43 @@
+
+.toggle-button-cover {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  input {
+    position: relative;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    left: 4%;
+  }
+
+  .checked {
+    transition: 1.2s;
+    transform: translateX(78px);
+  }
+
+  .not__checked {
+    transition: 1.2s;
+  }
+
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
